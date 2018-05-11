@@ -1,0 +1,37 @@
+\documentclass[b5j,twoside,openany]{jreport}
+\usepackage{enumerate}
+\makeatletter
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{showkeys}
+\usepackage{ascmac}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{multienum}
+\usepackage{bm}
+
+\renewcommand{\bibname}{参考文献}
+
+\input title/title.tex
+\input setting/fomulanumber.tex
+\input setting/header.tex
+\input setting/newtheory.tex
+\begin{document}
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+% !TEX root =../main.tex
+\input{source/chapter1.tex}
+\input{source/chapter2.tex}
+
+\chapter*{索引}
+\section*{定義一覧}
+\listtheorems{Definition}
+\newpage
+\section*{定理一覧}
+\listtheorems{Theorem}
+
+\end{document}

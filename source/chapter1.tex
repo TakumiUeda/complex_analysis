@@ -1,0 +1,394 @@
+% !TEX root =../main.tex
+\chapter{複素数と複素関数}
+\section{複素数の定義と基本性質}
+\subsection{複素数の定義}
+\begin{Definition}[虚数単位]
+\ \\ \par
+　2乗して-1となるような数を$i$を用いて次のように表し，虚数単位という．
+\begin{align}
+=\sqrt{-1}
+\end{align}
+\end{Definition}
+\begin{Definition}[複素数]
+\ \\ \par
+　虚数単位を用いて表すことのできる数を複素数という．
+\begin{align}
+\dot{z}=x+iy
+\end{align}
+\end{Definition}
+
+\begin{Definition}[実部]
+\ \\ \par
+　複素数$\dot{z}=x+iy$の実数部分を実部といい次のように示す．
+\begin{align}
+\Re(z)=x
+\end{align}
+\end{Definition}
+
+\begin{Definition}[虚部]
+\ \\ \par
+　複素数$\dot{z}=x+iy$の虚数部分を虚部といい次のように示す．
+\begin{align}
+\Im(z)=y
+\end{align}
+\end{Definition}
+
+\subsection{複素数の基本演算}
+\begin{enumerate}
+\item 和\\
+\begin{align}
+(a+ib)+(c+id)=(a+c)+i(b+d)
+\end{align}
+\item 差\\
+\begin{align}
+(a+ib)-(c+id)=(a-c)+i(b-d)
+\end{align}
+\item 積\\
+\begin{align}
+\begin{split}
+(a+ib)(c+id)&=ac+iad+ibc+i^{2}bd\\
+&=(ac-bd)+i(ad+bc)
+\end{split}
+\end{align}
+\item 商\\
+\begin{align}
+\begin{split}
+\dfrac{a+ib}{c+id}&=\dfrac{(a+ib)(c-id)}{(c+id)(c-id)}\\[1.5ex]
+&=\dfrac{(ac+bd)+i(bc-ad)}{c^{2}+d^{2}}
+\end{split}
+\end{align}
+\end{enumerate}
+
+\section{共役複素数}
+\subsection{共役複素数の定義}
+\begin{Definition}[共役複素数]
+\ \\ \par
+　複素数$z$の虚部を$-1$倍したものを共役複素数という．すなわち
+\begin{align}
+\begin{split}
+\dot{z}=x+iy
+\end{split}
+\end{align}
+に対し、
+\begin{align}
+\begin{split}
+\dot{z}^{*}=x-iy
+\end{split}
+\end{align}
+が共役複素数である．
+\end{Definition}
+\subsection{共役複素数の性質}
+\begin{Theorem}[共役複素数の性質]
+\ \\ \par
+\begin{enumerate}
+\item $z$が実数\\
+\begin{align}
+\begin{split}
+&\dot{z}^{*}=\dot{z}
+\end{split}
+\end{align}
+\begin{Proof}
+\ \\ \par
+$z$が実数より
+\begin{align*}
+z=x
+\end{align*}
+よって共役複素数は定義より\\
+\begin{align*}
+z^{*}=x
+\end{align*}
+よって
+\begin{align*}
+z=z^{*}
+\end{align*}
+\end{Proof}
+\item $z$が純虚数\\
+\begin{align}
+\begin{split}
+&\dot{z}^{*}=-\dot{z}
+\end{split}
+\end{align}
+\begin{Proof}
+\ \\ \par
+$z$が純虚数より
+\begin{align*}
+z=iy
+\end{align*}
+よって共役複素数は定義より\\
+\begin{align*}
+z^{*}=-iy
+\end{align*}
+よって
+\begin{align*}
+z=-z^{*}
+\end{align*}
+\end{Proof}
+
+\item 対合\\
+\begin{align}
+\begin{split}
+&(\dot{z}^{*})^{*}=\dot{z}
+\end{split}
+\end{align}
+
+\begin{Proof}
+\ \\ \par
+$z$の共役複素数は
+\begin{align*}
+(\dot{z}^{*})=x -iy
+\end{align*}
+よって$(\dot{z}^{*})^{*}$は\\
+\begin{align*}
+(\dot{z}^{*})^{*}=z
+\end{align*}
+\end{Proof}
+
+\item ノルムの一致\\
+\begin{align}
+\begin{split}
+&|\dot{z}|=|\dot{z}^{*}|
+\end{split}
+\end{align}
+
+\begin{Proof}
+\ \\ \par
+ノルムの定義より
+\begin{align*}
+r=\sqrt{x^{2}+y^{2}}=\sqrt{x^{2} +(-y)^{2}}
+\end{align*}
+\end{Proof}
+
+\item 共役複素数の和と差\\
+\begin{align}
+\begin{split}
+&\dot{z}+\dot{z}^{*}=2 \Re(\dot{z})\\
+&\dot{z}-\dot{z}^{*}=2 \Im(\dot{z})\\
+&{(\dot{z_{1}}+\dot{z_{2}})}^{*}=\dot{z_{1}}^{*}+\dot{z_{2}}^{*}
+\end{split}
+\end{align}
+\begin{Proof}
+\ \\ \par
+\begin{align*}
+x+iy+x-iy=2x=2\Re(\dot{z})\\
+x+iy-x+iy=2y=2\Im(\dot{z})\\
+(x_{1}-iy_{1}+x_{2}-iy_{2})=\dot{z_{1}}^{*}+\dot{z_{2}}^{*}
+\end{align*}
+\end{Proof}
+
+\item 共役複素数の積\\
+\begin{align}
+\begin{split}
+&\dot{z}\dot{z}^{*}=|\dot{z}|^{2}\\
+&{(\dot{z_{1}} \dot{z_{2}})}^{*}=\dot{z_{1}}^{*} \cdot \dot{z_{2}}^{*}
+\end{split}
+\end{align}
+
+\begin{Proof}
+\begin{align*}
+\dot{z}\dot{z}^{*}&=(x+iy)(x-iy)\\
+&=x^{2}+y^{2}\\
+|\dot{z}|^{2}&=\left( \sqrt{x^{2}+y^{2}} \right)^{2}\\
+&=x^{2}+y^{2}\\
+{(\dot{z_{1}} \dot{z_{2}})}^{*}&=\left( (x_{1}+iy_{1})(x_{2}+iy_{2}) \right)^{*}\\
+&=x_{1}x_{2}-ix_{1}y_{2}-iy_{1}x_{2}-y_{1}y_{2}\\
+\dot{z_{1}}^{*} \cdot \dot{z_{2}}^{*}&=(x_{1}-iy_{1})(x_{2}-iy_{2})\\
+&=x_{1}x_{2}-ix_{1}y_{2}-iy_{1}x_{2}-y_{1}y_{2}
+\end{align*}
+\end{Proof}
+
+
+\item 共役複素数の商\\
+\begin{align}
+\begin{split}
+&\left (\dfrac{\dot{z_{1}}}{\dot{z_{2}}}\right ) ^{*}= \dfrac{\dot{z_{1}}^{*}}{\dot{z_{2}}^{*}} \\
+&\dot{z}^{-1} = \dfrac{\dot{z}^{*}}{|\dot{z}|^{2}}
+\end{split}
+\end{align}
+
+\end{enumerate}
+\end{Theorem}
+\section{極形式と偏角}
+\subsection{複素数の絶対値と大小関係}
+\begin{Definition}[複素数の絶対値]
+\begin{align}
+\begin{split}
+|\dot{z}|&=|x+iy|\\
+&=\sqrt{x^{2}+y^{2}}\\
+&=r
+\end{split}
+\end{align}
+\end{Definition}
+
+\begin{Theorem}[複素数の大小関係]
+\ \\ \par
+　２つの任意の複素数において，その複素数同士の大小関係は定義されない．
+\end{Theorem}
+\begin{Proof}
+$- i <  i \cdots (1)$が成り立つとする
+\begin{align}
+\begin{split}
+- i \times i &< i \times i \cdots( \times i)\\
+i \times 1 &< - i \times 1 \cdots(\times i)\\
+i &< -i
+\end{split}
+\end{align}
+よって矛盾するため定義不可
+\end{Proof}
+
+\subsection{偏角}
+
+\subsection{極形式}
+
+\begin{Definition}[極形式]
+\ \\ \par
+　$z=a+bi(a,b \subset \mathbb{R})$におて，$\sqrt{a^2+b^2} \not = 0$であるとき，
+　\begin{align*}
+　z=a+bi=\sqrt{a^2+b^2}  \left( \frac{a}{\sqrt{a^2+b^2}} + \frac{b}{\sqrt{a^2+b^2}}i \right)
+　\end{align*}
+　ここで$r=\sqrt{a^2+b^2}$及び実数$\theta$を
+　\begin{align*}
+　\cos \theta =\frac{a}{\sqrt{a^2+b^2}} , \sin \theta  = \frac{b}{\sqrt{a^2+b^2}}
+　\end{align*}
+
+　と定めると，$ z=r(\cos \theta +i \sin \theta$となり，このような表示形式を極形式という．
+\end{Definition}
+
+
+\section{複素数と三角関数}
+\subsection{オイラーの公式}
+\begin{Theorem}[オイラーの公式]
+\ \\ \par
+\label{Euler's formula}
+\begin{align}
+\begin{split}
+&e^{i \theta} = \cos \theta + i \sin \theta \\
+\end{split}
+\end{align}
+\end{Theorem}
+
+\begin{Theorem}[オイラーの等式]
+\ \\ \par
+　特に$\theta=\pi$の時のオイラーの公式をオイラーの等式という．オイラーの等式は
+\begin{align}
+\begin{split}
+e^{i \pi} = -1
+\end{split}
+\end{align}
+となる．
+\end{Theorem}
+
+\begin{Theorem}[三角関数の複素表示]
+\ \\ \par
+　定理\ref{Euler's formula}の関係を用いると
+\begin{align}
+\begin{split}
+&\sin \theta = \dfrac{e^{i \theta} - e^{-i \theta} }{i2} \\[1.5ex]
+&\cos \theta = \dfrac{e^{i \theta} + e^{-i \theta} }{2}
+\end{split}
+\end{align}
+\end{Theorem}
+
+\subsection{三角関数の諸定理}
+\begin{Theorem}[加法定理]
+\ \\ \par
+\begin{enumerate}
+\item 
+\begin{align}
+\begin{split}
+\sin (\theta_{1} \pm \theta_{2}) &= \sin \theta_{1} \cos \theta_{2} \pm \cos \theta_{1}\sin \theta_{2} 
+\end{split}
+\end{align}
+\item 
+\begin{align}
+\begin{split}
+\cos (\theta_{1} \pm \theta_{2}) &= \cos \theta_{1} \cos \theta_{2} \mp \sin \theta_{1}\sin \theta_{2}
+\end{split}
+\end{align}
+\item 
+\begin{align}
+\begin{split}
+\tan(\theta_{1} \pm \theta_{2}) &= \frac{\tan(\theta_{1} \pm \tan \theta_{2})}{ 1 \mp \tan(\theta_{1} \tan \theta_{2})}
+\end{split}
+\end{align}
+\end{enumerate}
+\end{Theorem}
+
+\begin{Theorem}[倍角の公式]
+\ \\ \par
+\begin{enumerate}
+\item
+\begin{align}
+\begin{split}
+\sin 2 \theta &=  2 \sin \theta \cos \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\cos 2 \theta &= \cos^{2} \theta  - \sin \theta^{2} \theta\\
+&=2 \cos^{2} \theta -1\\
+&=1-2 \sin^{2} \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\tan2 \theta &= \frac{2 \tan \theta}{1 - \tan^{2} \theta}
+\end{split}
+\end{align}
+\end{enumerate}
+\end{Theorem}
+
+\begin{Theorem}[半角の公式]
+\ \\ \par
+\begin{enumerate}
+\item
+\begin{align}
+\begin{split}
+\sin^{2} \frac{\theta}{2} &=  \frac{1-\cos \theta}{2}
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\cos^{2} \frac{\theta}{2} &= \frac{1 + \cos \theta}{2}
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\tan^{2} \frac{\theta}{2} &= \dfrac{\sin^{2} \frac{\theta}{2}}{\sin^{2} \frac{\theta}{2}}\\
+&=\dfrac{1 - \cos \theta}{1 + \cos \theta}
+\end{split}
+\end{align}
+\end{enumerate}
+\end{Theorem}
+
+\begin{Theorem}[三倍角の公式]
+\ \\ \par
+\begin{enumerate}
+\item
+\begin{align}
+\begin{split}
+\sin^{3} \theta &=  3 \sin \theta - 4\sin^{3} \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\cos^{3} \theta &=  4 \cos^{3} \theta - 3\cos \theta
+\end{split}
+\end{align}
+\end{enumerate}
+\end{Theorem}
+
+\begin{Theorem}[チェビシェフ多項式]
+\ \\ \par
+　$\cos nx$は$\cos \theta$の$n$次多項式で表すことができる．このような多項式をチェビシェフ多項式と呼び，$T_{n}(x)$と表す．
+\end{Theorem}
+
+\subsection{逆三角関数}
+\begin{Definition}[逆三角関数]
+\ \\ \par
+　$x = \sin \theta$ の逆関数を $ \theta = \sin^{-1} x $ と書き，逆三角関数という． 
+\end{Definition}

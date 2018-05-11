@@ -1,0 +1,98 @@
+% !TEX root =../main.tex
+\chapter{複素関数と性質}
+\section{複素関数の微分}
+\subsection{正則関数の定義と非正則関数}
+
+\chapter{複素線積分とコーシーの積分定理}
+\subsection{コーシー・リーマンの方程式}
+\begin{Theorem}[コーシー・リーマンの方程式]
+\ \\ \par
+複素変数$z=x+iy$の関数$f(z)=u(x,y)+iv(x,y)$について
+\begin{align}
+\begin{split}
+\dfrac{\partial u}{\partial x} &= \dfrac{\partial v}{\partial y} \\
+\dfrac{\partial u}{\partial y} &= -\dfrac{\partial v}{\partial x}
+\end{split}
+\end{align}
+をコーシー・リーマンの方程式という．
+\end{Theorem}
+\section{グリーンの定理}
+\begin{Theorem}[グリーンの定理]
+\ \\ \par
+　単純閉曲線$C(=\partial D)$に囲まれた領域$D$ついて
+\begin{align}
+\begin{split}
+&\int_{\partial D} P dx + Q dy = \int \int _{D} \left( \dfrac{\partial Q}{\partial x} - \dfrac{\partial Q}{\partial x} \right) dxdy
+\end{split}
+\end{align}
+\end{Theorem}
+\chapter{コーシーの積分公式と応用}
+\section{コーシーの積分公式}
+\begin{Theorem}[コーシーの積分公式]
+\ \\ \par
+$単連結領域内$D$f(z)$で正則である$f(z)$について，$D$のジョルダン閉曲線上を正の方向に$1$周する積分路を$C$とすると，$C$内部の任意の点$z$に関して
+\begin{align}
+\begin{split}
+f(z) = \frac{1}{2 \pi i} \oint \frac{f(\zeta)}{\zeta -z} d \zeta
+\end{split}
+\end{align}
+が成り立つ
+\end{Theorem}
+\begin{Proof}
+\ \\ \par
+$f(z)$は領域内で正則であるので$\zeta - $平面上で$C$の内部にある$\dfrac{f(\zeta)}{\zeta-z}$の特異点は$\zeta = z$だけであり，その時の留数は
+\begin{align}
+\begin{split}
+\mbox{Res}(z) &= \lim_{\zeta \to z} (\zeta - z) \frac{f(\zeta)}{\zeta -z} d \zeta \\
+&=f(z)
+\end{split}
+\end{align}
+\end{Proof}
+
+\section{リュウビルの定理}
+
+\chapter{冪級数展開の拡張}
+
+
+\chapter{留数定理}
+\section{ローラン展開}
+\section{留数と留数定理}
+\begin{Theorem}[1位の極]
+\ \\ \par
+$a$が$1$位の極である場合に留数を求めるには
+\begin{align}
+\begin{split}
+\mbox{Res}(a,f) &= \lim_{z \to a} (z-a) f(z)
+\end{split}
+\end{align}
+\end{Theorem}
+
+\begin{Theorem}[2位の極]
+\ \\ \par
+$a$が$2$位の極である場合に留数を求めるには
+\begin{align}
+\begin{split}
+\mbox{Res}(a,f) &= \lim_{z \to a} \dfrac{d}{dz} \{ (z-a^{2}) f(z) \}
+\end{split}
+\end{align}
+\end{Theorem}
+
+\begin{Theorem}[n位の極]
+\ \\ \par
+$a$が$n$位の極である場合に留数を求めるには
+\begin{align}
+\begin{split}
+\mbox{Res} (a,f) &= \dfrac{1}{(n-1)!} \lim_{z \to a} \dfrac{d^{n-1}}{dz^{n-1}} \{ (z-a)^{n} f(z) \}
+\end{split}
+\end{align}
+\end{Theorem}
+\subsection{留数定理}
+\begin{Theorem}[留数定理]
+\ \\ \par
+\begin{align}
+\begin{split}
+\oint f(z) dz &= 2 \pi i \mbox{Res}(a,f)
+\end{split}
+\end{align}
+\end{Theorem}
+
