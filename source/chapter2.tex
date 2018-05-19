@@ -33,7 +33,7 @@
 $$BC1O"7kNN0hFb(B$D$f(z)$$B$G@5B'$G$"$k(B$f(z)$$B$K$D$$$F!$(B$D$$B$N%8%g%k%@%sJD6J@~>e$r@5$NJ}8~$K(B$1$$B<~$9$k@QJ,O)$r(B$C$$B$H$9$k$H!$(B$C$$BFbIt$NG$0U$NE@(B$z$$B$K4X$7$F(B
 \begin{align}
 \begin{split}
-f(z) = \frac{1}{2 \pi i} \oint \frac{f(\zeta)}{\zeta -z} d \zeta
+f(z) = \frac{1}{2 \pi i} \oint_{c} \frac{f(\zeta)}{\zeta -z} d \zeta
 \end{split}
 \end{align}
 $B$,@.$jN)$D(B
@@ -56,6 +56,18 @@ $f(z)$$B$ONN0hFb$G@5B'$G$"$k$N$G(B$\zeta - $$BJ?LL>e$G(B$C$$B$NFbIt$K$"$k(
 
 \chapter{$BN1?tDjM}(B}
 \section{$B%m!<%i%sE83+(B}
+\begin{Theorem}[$B%m!<%i%s5i?t(B]
+\ \\ \par
+$B4X?t(B$f(z)$$B$rNN0h(B$0  \leq R_{1} < |z-a| <R_{2} $$B$G@5B'$H$9$k!%$3$N$H$-!$(B$f(z)$$B$OE@(B$a$$B$rCf?4$rCf?4$H$9$k%m!<%i%s5i?t(B
+\begin{align}
+\begin{split}
+f(z) = \sum_{n=0}^{\infty} a_{n} (z-a)^{n} + \sum_{n=1}^{\infty} \dfrac{a_{-n}}{(z-a)^{n}}\\[1.5ex]
+a_{n} = \frac{1}{2 \pi i} \int_{|\zeta - a|=r} \dfrac{f(\zeta)}{(\zeta - a)^{n+1}} d\zeta \\[1.5ex] (n=0\pm1,\pm2, \cdots,0  \leq R_{1} < |z-a| <R_{2})
+\end{split}
+\end{align}
+$B$KE83+$G$-$k!%(B
+\end{Theorem}
+
 \section{$BN1?t$HN1?tDjM}(B}
 \begin{Theorem}[1$B0L$N6K(B]
 \ \\ \par

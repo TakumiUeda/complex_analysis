@@ -26,4 +26,4 @@
 \contentsline {chapter}{\numberline {第6章}留数定理}{17}
 \contentsline {section}{\numberline {6.1}ローラン展開}{17}
 \contentsline {section}{\numberline {6.2}留数と留数定理}{17}
-\contentsline {subsection}{\numberline {6.2.1}留数定理}{17}
+\contentsline {subsection}{\numberline {6.2.1}留数定理}{18}
