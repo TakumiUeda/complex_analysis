@@ -6,7 +6,7 @@
 \ \\ \par
 　2乗して-1となるような数を$i$を用いて次のように表し，虚数単位という．
 \begin{align}
-=\sqrt{-1}
+i=\sqrt{-1}
 \end{align}
 \end{Definition}
 \begin{Definition}[複素数]
@@ -59,6 +59,57 @@
 \end{align}
 \end{enumerate}
 
+\section{極形式と偏角}
+\subsection{複素数のノルムと大小関係}
+\begin{Definition}[複素数のノルム]
+\begin{align}
+\begin{split}
+||\dot{z}||&=||x+iy||\\
+&=\sqrt{x^{2}+y^{2}}\\
+&=r
+\end{split}
+\end{align}
+\end{Definition}
+
+\begin{Theorem}[複素数の大小関係]
+\ \\ \par
+　２つの任意の複素数において，その複素数同士の大小関係は定義されない．
+\end{Theorem}
+\begin{Proof}
+$- i <  i \cdots (1)$が成り立つとする
+\begin{align}
+\begin{split}
+- i \times i &< i \times i \cdots( \times i)\\
+i \times 1 &< - i \times 1 \cdots(\times i)\\
+i &< -i
+\end{split}
+\end{align}
+よって矛盾するため定義不可
+\end{Proof}
+
+\subsection{偏角}
+
+\subsection{極形式}
+
+\begin{Definition}[極形式]
+\ \\ \par
+　$z=a+bi(a,b \subset \mathbb{R})$におて，$\sqrt{a^2+b^2} \not = 0$であるとき，
+　\begin{align*}
+　z=a+bi=\sqrt{a^2+b^2}  \left( \frac{a}{\sqrt{a^2+b^2}} + \frac{b}{\sqrt{a^2+b^2}}i \right)
+　\end{align*}
+　ここで$r=\sqrt{a^2+b^2}$及び実数$\theta$を
+　\begin{align*}
+　\cos \theta =\frac{a}{\sqrt{a^2+b^2}} , \sin \theta  = \frac{b}{\sqrt{a^2+b^2}}
+　\end{align*}
+
+　と定めると，$ z=r(\cos \theta +i \sin \theta)$となり，このような表示形式を極形式という．
+\end{Definition}
+
+\begin{Theorem}[ド・モアブルの定理]
+\begin{align}
+(\cos \theta + i \sin \theta)^{n} = \cos n \theta + i \sin n \theta
+\end{align}
+\end{Theorem}
 \section{共役複素数}
 \subsection{共役複素数の定義}
 \begin{Definition}[共役複素数]
@@ -207,52 +258,6 @@ x+iy-x+iy=2y=2\Im(\dot{z})\\
 
 \end{enumerate}
 \end{Theorem}
-\section{極形式と偏角}
-\subsection{複素数の絶対値と大小関係}
-\begin{Definition}[複素数の絶対値]
-\begin{align}
-\begin{split}
-|\dot{z}|&=|x+iy|\\
-&=\sqrt{x^{2}+y^{2}}\\
-&=r
-\end{split}
-\end{align}
-\end{Definition}
-
-\begin{Theorem}[複素数の大小関係]
-\ \\ \par
-　２つの任意の複素数において，その複素数同士の大小関係は定義されない．
-\end{Theorem}
-\begin{Proof}
-$- i <  i \cdots (1)$が成り立つとする
-\begin{align}
-\begin{split}
-- i \times i &< i \times i \cdots( \times i)\\
-i \times 1 &< - i \times 1 \cdots(\times i)\\
-i &< -i
-\end{split}
-\end{align}
-よって矛盾するため定義不可
-\end{Proof}
-
-\subsection{偏角}
-
-\subsection{極形式}
-
-\begin{Definition}[極形式]
-\ \\ \par
-　$z=a+bi(a,b \subset \mathbb{R})$におて，$\sqrt{a^2+b^2} \not = 0$であるとき，
-　\begin{align*}
-　z=a+bi=\sqrt{a^2+b^2}  \left( \frac{a}{\sqrt{a^2+b^2}} + \frac{b}{\sqrt{a^2+b^2}}i \right)
-　\end{align*}
-　ここで$r=\sqrt{a^2+b^2}$及び実数$\theta$を
-　\begin{align*}
-　\cos \theta =\frac{a}{\sqrt{a^2+b^2}} , \sin \theta  = \frac{b}{\sqrt{a^2+b^2}}
-　\end{align*}
-
-　と定めると，$ z=r(\cos \theta +i \sin \theta$となり，このような表示形式を極形式という．
-\end{Definition}
-
 
 \section{複素数と三角関数}
 \subsection{オイラーの公式}
@@ -313,27 +318,85 @@ e^{i \pi} = -1
 \end{enumerate}
 \end{Theorem}
 
-\begin{Theorem}[倍角の公式]
+\begin{Theorem}[加法定理]
+\ \\ \par
+\begin{enumerate}
+\item 
+\begin{align}
+\begin{split}
+\sin (\theta_{1} \pm \theta_{2}) &= \sin \theta_{1} \cos \theta_{2} \pm \cos \theta_{1}\sin \theta_{2} 
+\end{split}
+\end{align}
+\item 
+\begin{align}
+\begin{split}
+\cos (\theta_{1} \pm \theta_{2}) &= \cos \theta_{1} \cos \theta_{2} \mp \sin \theta_{1}\sin \theta_{2}
+\end{split}
+\end{align}
+\item 
+\begin{align}
+\begin{split}
+\tan(\theta_{1} \pm \theta_{2}) &= \frac{\tan(\theta_{1} \pm \tan \theta_{2})}{ 1 \mp \tan(\theta_{1} \tan \theta_{2})}
+\end{split}
+\end{align}
+\end{enumerate}
+\end{Theorem}
+
+\begin{Theorem}[三角関数の周期性]
 \ \\ \par
 \begin{enumerate}
 \item
 \begin{align}
 \begin{split}
-\sin 2 \theta &=  2 \sin \theta \cos \theta
+\sin (-\theta) &=  - \sin \theta
 \end{split}
 \end{align}
 \item
 \begin{align}
 \begin{split}
-\cos 2 \theta &= \cos^{2} \theta  - \sin \theta^{2} \theta\\
-&=2 \cos^{2} \theta -1\\
-&=1-2 \sin^{2} \theta
+\cos ( - \theta) &= \cos \theta
 \end{split}
 \end{align}
 \item
 \begin{align}
 \begin{split}
-\tan2 \theta &= \frac{2 \tan \theta}{1 - \tan^{2} \theta}
+\tan(- \theta) &= -\tan \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\sin \left( \theta \pm \frac{\pi}{2} \right) &= \pm \cos \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\cos \left( \theta \pm \frac{\pi}{2} \right) &= \mp \sin \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\tan \left( \theta \pm \frac{\pi}{2} \right) &= - \frac{1}{\tan \theta}
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\sin \left( \theta \pm \pi \right) &= - \sin \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\cos \left( \theta \pm \pi \right) &= - \cos \theta
+\end{split}
+\end{align}
+\item
+\begin{align}
+\begin{split}
+\tan \left( \theta \pm \pi \right) &= \tan \theta
 \end{split}
 \end{align}
 \end{enumerate}
