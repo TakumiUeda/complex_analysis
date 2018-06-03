@@ -15,7 +15,8 @@
 \contentsline {subsection}{\numberline {1.4.3}逆三角関数}{13}
 \contentsline {chapter}{\numberline {第2章}複素関数と性質}{14}
 \contentsline {section}{\numberline {2.1}複素関数の微分}{14}
-\contentsline {subsection}{\numberline {2.1.1}正則関数の定義と非正則関数}{14}
+\contentsline {subsection}{\numberline {2.1.1}非複素関数の微分}{14}
+\contentsline {subsection}{\numberline {2.1.2}正則関数の定義と非正則関数}{14}
 \contentsline {chapter}{\numberline {第3章}複素線積分とコーシーの積分定理}{15}
 \contentsline {subsection}{\numberline {3.0.1}コーシー・リーマンの方程式}{15}
 \contentsline {section}{\numberline {3.1}グリーンの定理}{15}
